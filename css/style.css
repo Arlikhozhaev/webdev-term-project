@@ -1,0 +1,393 @@
+/* Content: 
+    GENERAL
+    HEADER
+    SEARCH FORM
+    HEALTHY LIVING 
+    LATEST NEWS
+    FOOTER
+
+    MEDIUM SCREEN
+    DESKTOP SCREEN
+    VERY LARGE SCREEN
+*/
+
+/* GENERAL */
+a {
+    color: var(--colors--text);
+}
+a:hover, #icons ul li a:hover {
+    cursor: pointer;
+    color: yellow;
+}
+button:hover {
+    cursor: pointer;
+}
+
+/* HEADER */
+header {
+    padding-top: 1rem;
+}
+h1 {
+    color: var(--colors--text);
+    font-size: 2rem;
+    margin-bottom: var(--layout--small-spacing);
+}
+#top {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    align-items: center;
+}
+#navbar nav ul {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    list-style-type: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.2rem;
+    margin-bottom: var(--layout--small-spacing);
+}
+#navbar ul li {
+    margin-top: var(--layout--large-spacing);
+    margin-bottom: var(--layout--large-spacing); 
+}
+#favicon {
+    float: left;
+    width: 120px;
+    height: 120px;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    margin-left: 2rem;
+}
+img {
+    width: 200px;
+    height: 100px;
+}
+
+/* SEARCH FORM */
+#search {
+    background-image: url(../images/background.jpeg);
+    background-size: cover;
+    background-size: 100% 100%;
+    text-align: center;
+    height: 300px;
+    grid-column: span 3;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+#search h2{
+    font-family: "Gelasio", "Nunito";
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: var(--layout--extra-large-spacing);
+    margin-top: var(--layout--small-spacing);
+    padding: 1rem;
+    font-size: 25px;
+    background-color: aquamarine;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 25px;
+}
+#search button {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 5px;
+    width: 15vw;
+    color: black;
+}
+form {
+    max-width: 370px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: aquamarine;
+    padding: 20px 10px 20px 10px;
+}
+input {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* HEALTHY LIVING */
+#healthy {
+    grid-column: span 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 5rem;
+    line-height: 2em;
+}
+#healthy p {
+    font-family: "Nunito";
+    font-weight: 700;
+    line-height: 2.5;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+}
+#icons {
+    text-align: center;
+    margin-right: 1.5rem;
+    margin-left: var(--layout--small-spacing);
+    font-size: 2rem;
+}
+#icons a {
+    color: darkblue;
+    display: inline-block;
+}
+#icons ul {
+    margin-top: var(--layout--small-spacing);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+#icons h3 {
+    text-align: center;
+    color: var(--colors--text);
+    font-size: 2.5rem;
+    padding-left: 40px;
+    margin-top: var(--layout--small-spacing);
+}
+#box {
+    background-color: aquamarine;
+    border-radius: 35px;
+    box-shadow: 15px 15px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+#box img {
+    width: 100%;
+    height: 50vh;
+    border-radius: 35px 35px 0 0;
+    object-fit: cover;
+}
+
+/* LATEST NEWS */
+#news {
+    text-align: center;
+    font-size: 2.5rem;
+}
+article {
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 15px;
+    margin: 1rem;
+    background-color: darkslateblue;
+    padding: 15px;
+    color: white;
+}
+article a {
+    color: goldenrod;
+    font-size: 1.5rem;
+}
+article img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+article p {
+    font-family: "Nunito";
+    text-align: left;
+    margin-left: 0.8rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 2em;
+}
+
+/* FOOTER */
+footer {
+    padding: 15px;
+    line-height: 2em;
+}
+footer a {
+    color: var(--colors--text);
+    font-size: 1rem;
+    padding-bottom: 15px;
+}
+footer p {
+    margin-top: 23px;
+    margin-right: var(--layout--large-spacing);
+    margin-bottom: var(--layout--small-spacing);
+}
+
+/* MEDIUM SCREEN */
+@media screen and (min-width:780px) {
+    header {
+        padding-top: var(--layout--small-spacing);
+    }
+    #booking {
+        margin-right: 3rem;
+        grid-column: 3/4; 
+        height: min-content;
+    }
+    #navbar ul a {
+        font-size: 1.5rem;
+    }
+    #top1 h1 {
+        padding-left: 3rem;
+    }
+    h1 {
+        font-size: 3rem;
+        margin-left: 6.5rem;
+        margin-bottom: 2rem;
+    }
+    #favicon {
+        margin-bottom: 1.5rem;
+        width: 150px;
+        height: 150px;
+    }
+    #search h2 {
+        width: 40%;
+    }
+    form {
+        max-width: 500px;
+        padding: 40px 20px 40px 20px;
+    }
+    #icons h3 {
+        font-size: 3rem;
+    }
+    #icons ul {
+        font-size: 2.5rem;
+    }
+    #box {
+        margin: 0 4rem 4rem 4rem;
+    }
+    article {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    footer {
+        margin-top: 2rem;
+    }
+    footer a {
+        font-size: 1.5rem;
+    }
+    footer ul {
+        padding-left: 2.5rem;
+    }
+}
+
+/* DESKTOP SCREEN */
+@media screen and (min-width:1440px) {
+    header {
+        display: grid;
+    }
+    #booking {
+        float: right;
+        margin-right: 4rem;
+        font-size: 1.8rem;
+        justify-self: end;
+        grid-column: 3/4; 
+    }
+    h1 {
+        font-size: 3rem;
+        margin-left: 8.5rem;
+    }
+    #top {
+        grid-template-columns: 170px 1fr 1fr;
+    }
+    #navbar nav ul {
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 1.5rem;
+    }
+    #favicon {
+        width: 170px;
+        height: 170px;
+        margin-left: 2.5rem;
+    }
+    img {
+        width: 400px;
+        height: 200px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    #search {
+        height: 400px;
+    }
+    #search h2{
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    #search button {
+        width: 70px;
+    }
+    form {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 20px 40px 20px;
+    }
+    #healthy {
+        grid-column: span 3;
+        grid-template-columns: 1fr 2fr;
+        line-height: 3em;
+        margin-right: 5rem;
+    }
+    #healthy p {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+    #icons {
+        display: grid;
+        grid-template-columns: 1fr min-content;
+        margin-top: 4rem;
+    }
+    #icons ul {
+        font-size: 3rem;
+        margin-top: var(--layout--small-spacing);
+        display: block;
+    }
+    #icons ul li {
+        margin-bottom: 1.5rem;
+    }
+    #icons h3 {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        margin-right: var(--layout--small-spacing);
+        align-self: baseline;
+        font-size: 3rem;
+        padding-left: var(--layout--small-spacing);
+    }
+    #box {
+        margin-right: 8.5rem;
+        margin-left: var(--layout--small-spacing);
+        margin-top: 4rem;
+    }
+    #news {
+        font-size: 3rem;
+        grid-column: span 3;
+    }
+    article {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    article a {
+        font-size: 1.8rem;
+    }
+    footer p {
+        margin-right: 2rem;
+        margin-bottom: var(--layout--small-spacing);
+    } 
+}
+
+/* VERY LARGE SCREEN */
+main, header #navbar ul, header h1, footer nav, footer p { 
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+

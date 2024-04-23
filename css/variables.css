@@ -1,0 +1,8 @@
+:root {
+    --layout--small-spacing: 0;
+    --layout--medium-spacing: 15px;
+    --layout--large-spacing: 1.5rem;
+    --layout--extra-large-spacing: 2.5rem;
+    --colors--text: aquamarine;
+    --typography--family: "Madimi One", "Nunito";
+}

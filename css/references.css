@@ -1,0 +1,122 @@
+/* Content: 
+    GENERAL 
+    HEADER 
+    MAIN
+    FOOTER 
+
+    MEDIUM SCREEN
+    DESKTOP SCREEN
+*/
+
+/* GENERAL */
+header ul li a, footer ul li a {
+    text-decoration: none;
+}
+header li, footer li {
+    list-style-type: none;
+}
+#websites td a {
+    text-decoration: none;
+}
+#link td a {
+    text-decoration: underline;
+}
+
+/* HEADER */
+header ul {
+    margin-top: var(--layout--small-spacing);
+    margin-bottom: var(--layout--extra-large-spacing);
+    padding-left: var(--layout--small-spacing);
+    padding-bottom: var(--layout--large-spacing);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 1rem;
+}
+header ul a {
+    color: var(--colors--text);
+}
+header div #booking {
+    margin-bottom: 1.5rem
+}
+
+/* MAIN */
+main div {
+    overflow-x: scroll;
+    margin-bottom: 3rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+table {
+    background-color: white;
+    border: 5px solid black;
+    width: 650px; 
+    text-align: center; 
+}
+caption {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+th {
+    background-color: rgba(34, 17, 84, 0.5);
+    font-family: "Nunito";
+    font-size: 1.5rem;
+    border: 3px solid black;
+}
+td {
+    background-color: aquamarine;
+    font-size: 1.5rem;
+    border: 3px solid black;
+}
+
+/* FOOTER */
+footer p {
+    margin-top: var(--layout--small-spacing);
+    margin-right: 1rem;
+}
+footer ul {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+footer li a {
+    color: var(--colors--text);
+}
+
+/* MEDIUM SCREEN */
+@media screen and (min-width:780px) {
+    header ul a, footer ul a {
+        font-size: 1.3rem;
+    }
+    header ul {
+        gap: 30px;
+    }
+    h1 {
+        margin-left: 6rem;
+    }
+    main div {
+        overflow-x: unset;
+    }
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* DESKTOP SCREEN */
+@media screen and (min-width:1440px) {
+    header ul a {
+        font-size: 1.8rem;
+    }
+    header ul {
+        gap: 45px;
+    }
+    h1 {
+        margin-left: 10rem;
+    }
+    table {
+        width: 1100px;
+        height: 450px;
+    }
+}

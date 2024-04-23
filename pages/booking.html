@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book appointment</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/booking.css">
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="centered">
+            <div id="top1">
+                <img src="../images/favicon.png" alt="Teeth and Medical Equipment" id="favicon">
+                <h1>Vancouver Health</h1>
+                <a href="#" id="booking">Book appointment</a>
+            </div>
+            <div id="navbar">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../pages/contact.html">Services & resources</a>
+                        </li>
+                        <li>
+                            <a href="../pages/references.html">Find a location</a>
+                        </li>
+                        <li>
+                            <a href="../pages/references.html">Media</a>
+                        </li>
+                        <li>
+                            <a href="../pages/contact.html">My account</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <h1 id="book">Book appointment</h1>
+        <p class="tagline">Give a detailed information on what you are looking for.</p>
+    </header>
+    <main>
+        <section id="grid">
+            <h2>How can we help?</h2>
+            <section id="option">
+                <h2>Details:</h2>
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>Choose an option:</legend>
+                        <ul>
+                            <li>
+                                <label>Health Consultant Session
+                                    <input type="radio" name="option" value="consultant">
+                                </label>
+                            </li>
+                            <li>
+                                <label>COVID-19
+                                    <input type="radio" name="option" value="covid">
+                                </label>
+                            </li>
+                            <li>
+                                <label>Mental Health
+                                    <input type="radio" name="option" value="mentalhealth">
+                                </label>
+                            </li>
+                            <li>
+                                <label>Community Care
+                                    <input type="radio" name="option" value="communitycare">
+                                </label>
+                            </li>
+                            <li>
+                                <label>Career Opportunity
+                                    <input type="radio" name="option" value="career">
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </section>
+            <section id="doctor">
+                <h3>Name:</h3>
+                <form action="#" method="get">
+                    <label id="doctorname">Type the Name of the Doctor:
+                        <input type="text" name="doctorname" placeholder="Ex: Dr.Smith">
+                    </label>
+                </form>
+            </section>
+            <section id="datetime">
+                <h3>Date & Time:</h3>
+                <form action="#" method="get">
+                    <label>Date:
+                        <input type="date" name="date">
+                    </label>
+                    <label>Time:
+                        <input type="time" name="time">
+                    </label>
+                </form>
+            </section>
+            <section id="type">
+                <h3>Type here:</h3>
+                <label>
+                    <textarea name="info"
+                        placeholder="Please provide any relevant medical history, current medications, allergies, and specific symptoms or concerns you have for the doctor to review before your appointment."></textarea>
+                </label>
+            </section>
+            <button id="submit" type="submit">Submit</button>
+        </section>
+    </main>
+    <footer id="footer1">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../pages/references.html">References</a>
+                </li>
+                <li>
+                    <a href="../pages/references.html">Donate</a>
+                </li>
+                <li>
+                    <a href="../pages/references.html">Volunteer</a>
+                </li>
+                <li>
+                    <a href="../pages/contact.html">Contact us</a>
+                </li>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="footer">
+            <p>Copyright &copy; 2024 Abdu Alim Arlikhozhaev</p>
+        </div>
+    </footer>
+</body>
+
+</html>

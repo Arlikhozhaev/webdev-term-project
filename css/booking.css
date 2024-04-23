@@ -1,0 +1,243 @@
+/* Content: 
+    GENERAL 
+    HEADER 
+    MAIN
+    FOOTER 
+
+    MEDIUM SCREEN
+    DESKTOP SCREEN
+*/
+
+/* GENERAL */
+html {
+    line-height: 1.5;
+}
+ul li {
+    list-style-type: none;
+}
+a {
+    color: var(--colors--text);
+}
+input {
+    padding: 5px;
+    border-radius: 15px;
+}
+#doctorname input {
+    border-radius: 5px;
+}
+button {
+    padding: 7px;
+    border-radius: 15px;
+}
+button a {
+    color: black;
+}
+textarea {
+    width: 80%;
+    min-height: 5rem;
+    resize: vertical;
+    margin-bottom: 1rem;
+}
+header #booking {
+    display: none;
+}
+#top1 h1 {
+    justify-self: left;
+    margin-left: 1.3rem;
+    font-size: 1.5rem;
+}
+
+/* HEADER */
+#book {
+    margin-bottom: 5px;
+    margin-top: 1rem;
+    font-family: "Nunito";
+    margin-left: 0;
+    text-align: center;
+}
+h1 {
+    margin-left: var(--layout--small-spacing);
+}
+h1, .tagline {
+    font-family: "Nunito";
+    color: var(--colors--text);
+}
+header {
+    text-align: center;
+}
+header p {
+    margin-bottom: var(--layout--small-spacing);
+    margin-top: var(--layout--small-spacing);
+    padding-bottom: var(--layout--extra-large-spacing);
+}
+header ul {
+    margin-top: var(--layout--small-spacing);
+    margin-bottom: var(--layout--extra-large-spacing);
+    padding-left: var(--layout--small-spacing);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 1rem;
+}
+
+/* MAIN */
+main {
+    text-align: center;
+}
+h2 {
+    padding-top: 1rem;
+    margin-top: var(--layout--small-spacing);
+    font-size: 2rem;
+}
+#option {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: 3px dotted black;
+    background-image: url(../images/background.jpeg);
+    background-size: cover;
+}
+#option h2 {
+    background-color: aquamarine;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: 0;
+    margin-top: 10px;
+    max-width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: min-content;
+    padding: 8px;
+}
+#option fieldset {
+    margin: 1rem;
+    background-color: aquamarine;
+}
+#option legend {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: lightblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#option ul {
+    padding-left: var(--layout--small-spacing);
+}
+#option ul li {
+    padding-bottom: 5px;
+}
+#option button {
+    margin-bottom: 1rem;
+}
+button {
+    grid-column: span 2;
+    max-width: 60px;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+
+
+/* FOOTER */
+footer p {
+    margin-top: var(--layout--small-spacing);
+    margin-bottom: 10px;
+    margin-right: 1rem;
+}
+footer ul {
+    margin-top: var(--layout--small-spacing);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+#footer1 li {
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+
+
+/* MEDIUM SCREEN  */
+@media screen and (min-width:780px) {
+    main #grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #top1 h1 {
+        font-size: 2.8rem;
+        margin-left: 10rem;
+    }
+    header ul {
+        gap: 30px;
+    }
+    h2 {
+        font-size: 2.5rem;
+        grid-column: span 2;
+    }
+    #option {
+        grid-column: span 2;
+    }
+    #doctor form {
+        margin-left: 6rem;
+        margin-top: 1.3rem;
+    }
+    textarea {
+        width: 50%;
+        min-height: 4rem;
+    }
+    #type {
+        grid-column: span 2; 
+    }
+    #datetime {
+        max-width: 80%;
+    }
+    #datetime button {
+        margin-top: 10px;
+    }
+}
+
+/* DESKTOP SCREEN */
+@media screen and (min-width:1440px) {
+    header ul {
+        font-size: 1.5rem;
+        gap: 70px;
+    }
+    #top1 h1 {
+        font-size: 4rem;
+        margin-left: 12rem;
+    }
+    #option {
+        grid-column: span 1;
+        grid-row: span 2;
+        margin-left: 23.5rem;
+        width: 400px;
+    }
+    textarea {
+        min-height: 3rem;
+    }
+    #datetime {
+        grid-column: 2/3; 
+    }
+    #doctor {
+        justify-self: left;
+    }
+    #doctor form {
+        max-width: 300px;
+        margin-left: 3rem;
+        font-weight: 600;
+        font-size: 1rem;
+        text-align: left;
+    }
+    #datetime {
+        justify-self: left;
+        margin-left: 3rem;
+    } 
+    footer ul {
+        font-size: 1.5rem;
+        margin-left: 23.5rem;
+        display: flex;
+        gap: 70px;
+        padding: 3rem 0 3rem 0;
+    }
+}
